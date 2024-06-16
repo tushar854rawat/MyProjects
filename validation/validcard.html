@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Credit Card Validator</title>
+</head>
+<body>
+    <h1>Credit Card Validator</h1>
+    <label for="cardNumber">Enter Credit Card Number:</label>
+    <input type="text" id="cardNumber" placeholder="Enter your credit card number">
+    <button onclick="validateCard()">Validate</button>
+    <div id="result"></div>
+
+    <script>
+        function validateCard() {
+            var cardNumber = document.getElementById('cardNumber').value;
+
+            // Remove any whitespace
+            cardNumber = cardNumber.replace(/\s/g, '');
+
+            var cardTypes = [
+                { name: 'Visa', prefix: '4', length: [13, 16] },
+                { name: 'Mastercard', prefix: '5', length: [16] },
+                { name: 'American Express', prefix: '34', length: [15] },
+                { name: 'Discover', prefix: '6', length: [16] }
+            ];
+
+            var isValid = false;
+            var cardType = '';
+
+            for (var i = 0; i < cardTypes.length; i++) {
+                var type = cardTypes[i];
+                if (cardNumber.startsWith(type.prefix) && type.length.includes(cardNumber.length)) {
+                    isValid = true;
+                    cardType = type.name;
+                    break;
+                }
+            }
+
+            var resultDiv = document.getElementById('result');
+            if (isValid) {
+                resultDiv.innerText = 'Valid ' + cardType + ' card.';
+            } else {
+                resultDiv.innerText = 'Invalid card.';
+            }
+        }
+    </script>
+</body>
+</html>
