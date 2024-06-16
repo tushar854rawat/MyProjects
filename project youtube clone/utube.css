@@ -1,0 +1,202 @@
+.header {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    position: fixed;
+    top: 0;
+    left:0;
+    right: 0;
+    background-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: aliceblue;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    top: 60px;
+    width: 60px;
+    background-color: white;
+}
+
+.home {
+    height: 40px;
+    margin-left: 15px;
+}
+
+.home1 {
+    margin-top: 0;
+    margin-left: 15px;
+}
+
+.home2 {
+    margin-top: 0;
+}
+
+.home3 {
+    margin-left: 10px;
+    margin-top: 0;
+}
+
+.head-left {
+    width: 200px;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    margin-left: 20px;
+    height: 25px;
+}
+
+.ulogo {
+    height: 20px;
+    margin-left: 20px;
+}
+
+.head-middle{
+    background-color:rgb(252, 252, 252);
+    flex:1;
+    margin-right: 50px;
+    max-width: 700px;
+    display: flex;
+}
+
+.search-bar {
+    height: 40px;
+    margin-top: 7px;
+    border-color: solid;
+    border-color: rgb(38, 39, 40);
+    margin-left: 10px;
+    flex: 1;
+    width:0;
+}
+.search-button {
+    height: 45px;
+    width: 100px;
+    background-color: rgb(230, 234, 237);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(252, 252, 252);
+    margin-left: -1px;
+    margin-right: 10px;
+    margin-top: 7px;
+}
+
+.search-img {
+    height: 25px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.mic-button {
+    height: 50px;
+    width: 50px;
+    border-radius: 60px;
+    border: none;
+    margin-top: 5px;
+    background-color: rgb(231, 226, 226);
+}
+
+.mic-img {
+    height: 25px;
+    margin-top: 5px;
+}
+
+.head-right {
+    margin-right: 20px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.upload {
+    height: 30px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.uapps {
+    height: 30px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.notification {
+    height: 30px;
+    margin-top: 15px;
+    margin-right: 20px;
+}
+
+.profile {
+    height: 30px;
+    margin-top: 15px;
+    border-radius: 40px;
+    margin-right: 20px;
+}
+
+.thumb1 {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.search-bar {
+    font-size: 20px;
+    display: block;
+}
+
+.thumb-img {
+    margin-bottom: 2px;
+}
+
+.thumb1-p1 {
+    width: 300px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.channel-img {
+    padding-top: 15px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.profile-pic {
+    width: 40px;
+    border-radius: 50px;
+}
+
+.thumb1-p1 {
+    width: 250px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 40px;
+    margin-top: 90px;
+    margin-left: 90px;
+    background-color: rgb(245, 249, 253);
+}
+
+.vedio-time {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 225px;
+    right: 470px;
+    padding-left: 4px;
+    padding-top: 3px;
+    padding-right: 4px;
+    padding-bottom: 3px;
+    border-radius: 5px;
+}
